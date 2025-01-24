@@ -6,8 +6,10 @@
   -    Cars
   -    Travel
     
--    ## Websites I love
-  -    
+-    ## Websites I love 
+  -    [CrunchyRoll] (https://www.crunchyroll.com/) - I love to watch shows on this website for entertainment.
+  -    [Car Parts]  (https://www.carparts.com/) - This website is good for people looking to build their car with aftermarket parts.
+    
 
 
     
