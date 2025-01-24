@@ -1,10 +1,7 @@
-this is the title
+Jaquan Knight
 
 ## sub bullet
-
-
-
-    -Jaquan Knight jknight9@my.waketech.edu
+    jknight9@my.waketech.edu
 
    >[WARNING]
    >this is a demo
