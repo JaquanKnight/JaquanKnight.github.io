@@ -35,7 +35,6 @@ def main():
     print(f"Hello {name}! You were born in {birth_year}.")
 
 # Run the program
-
-if __name__ == "__main__":
+    if __name__ == "__main__":
     main()
 
