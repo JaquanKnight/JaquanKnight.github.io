@@ -2,7 +2,7 @@ this is the title
 
 ## sub bullet
 
--  line one email
+
 
     -Jaquan Knight jknight9@my.waketech.edu
 
