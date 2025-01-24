@@ -15,7 +15,7 @@ this repository will hold my assignments/projects
 
 # Function to calculate birth year
 
-def calculate_birth_year(age):
+    def calculate_birth_year(age):
     current_year = 2025  # You can update this manually or get the current year dynamically
     birth_year = current_year - age
     return birth_year
