@@ -1,5 +1,16 @@
 # Jaquan Knight
 
+# About Me    
+-    ## My Hobbies
+  -    Building computers
+  -    Cars
+  -    Travel
+    
+-    ## Websites I love
+  -    
+
+
+    
 ## sub bullet
     jknight9@my.waketech.edu
 
