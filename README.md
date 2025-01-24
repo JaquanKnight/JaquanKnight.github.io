@@ -5,6 +5,7 @@
   -    Building computers
   -    Cars
   -    Travel
+  -    Watching shows/movies
     
 -    ## Websites I love 
   -    [CrunchyRoll] (https://www.crunchyroll.com/) - I love to watch shows on this website for entertainment.
