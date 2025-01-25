@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A([Start]) --> B{{Set Range for Random Number}}
     B --> C((Computer Selects a Random Number))
@@ -11,3 +12,4 @@ flowchart TD
     I --> D
     F --> J((End))
 
+```
