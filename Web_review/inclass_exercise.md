@@ -79,7 +79,7 @@ Learn to create a basic multi-page website using HTML and CSS. This exercise wil
 You should now have a multi-section webpage with a header, navigation menu, main content area with multiple sections, and a footer helping you to understand the structure and sections of a basic web page, and how CSS styles these components.
 
 
-### Part 2: Create `style.css`
+### Part 2: Create `styles.css`
 1. **Create a new file** named `style.css`.
 2. **Start by setting up general body styles**:
     ```css
