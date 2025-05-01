@@ -1,14 +1,10 @@
-
-// This section loads modules.  It loads the Express server and stores
-// it in "express", then creates a application, a router, and a path handler
 const express = require('express');
 const app = express();
 const router = express.Router();
 const path = require('path');
-
-// This part sets up the database
 const {Pool} = require('pg');
-// You may need to modify the password or database name in the following line:
+
+
 const connectionString = `postgres://postgres:postgres@localhost/Gradebook_Knight`;
 // The default password is CTI_110_WakeTech
 // The default database name is Gradebook
