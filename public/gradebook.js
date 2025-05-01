@@ -10,6 +10,12 @@ function PopulateGradebook(data) {
     console.log("populating gradebook with data:", data);
 }
 
+// TODO REMOVE THIS
+// Call the stubs to demonstrate the workflow
+const gradeData = fetchGradeData();
+PopulateGradebook(gradeData);
+// END REMOVE
+
 function fetchGradeData() {
     // This function will query the postgreSQL database and return grade data
     console.log("Fetching grade data...");
