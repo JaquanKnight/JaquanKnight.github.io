@@ -10,7 +10,7 @@ const connectionString = `postgres://postgres:postgres@localhost:5432/Gradebook_
 const pool = new Pool({ connectionString: connectionString });
 
 // Serve static files (like gradebook.js) from the 'public' folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // When the root path is accessed, return the gradebook HTML page
 router.get('/', function(req, res) {
@@ -21,11 +21,17 @@ app.use("/", router);
 // API endpoint to get grade data from the database
 router.get('/api/grades', function(req, res) {
     pool.query(
-        `SELECT Students.student_id, first_name, last_name, AVG(assignments.grade) as total_grade
-        FROM Students
-        LEFT JOIN Assignments ON Assignments.student_id = Students.student_id
-        GROUP BY Students.student_id
-        ORDER BY total_grade DESC`,
+        `SELECT 
+        Students.student_id,
+        first_name,
+        last_name,
+        MAX(CASE WHEN assignments.assignment_name = 'Assignment 1' THEN assignments.grade END) AS assignment_1,
+        MAX(CASE WHEN assignments.assignment_name = 'Assignment 2' THEN assignments.grade END) AS assignment_2,
+        MAX(CASE WHEN assignments.assignment_name = 'Assignment 3' THEN assignments.grade END) AS assignment_3
+    FROM Students
+    LEFT JOIN Assignments ON Assignments.student_id = Students.student_id
+    GROUP BY Students.student_id, first_name, last_name
+    ORDER BY last_name`,
         [],
         function(err, result) {
             if (err) {
